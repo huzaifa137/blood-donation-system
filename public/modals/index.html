@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Modal Registration Form Template</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Content -->
+        <div class="top-content">
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                                <div class="h1 mt-3">
+                                   <span style="color: white; font-family:'Courier New', Courier, monospace; font-weight: bold;"> BLOOD DONATION FORM</span>
+                                    <div class="top-big-link">
+                            	        <a class="btn btn-link-1 launch-modal" href="#" data-modal-id="modal-register">Register Donor</a>
+                                   </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- MODAL -->
+        <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+        	<div class="modal-dialog modal-dialog-scrollable">
+        		<div class="modal-content">
+        			
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-register-label">Sign up now</h3>
+        				<p>Fill in the form below to get instant access:</p>
+        			</div>
+        			
+        			<div class="modal-body">
+        				
+	                    <form role="form" action="" method="post" class="registration-form">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="form-first-name">Dono's First name</label>
+	                        	<input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-last-name">Donor's Last name</label>
+	                        	<input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+	                        </div>
+                            
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-email">Email</label>
+	                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+	                        </div>
+
+                            <div class="form-group">
+	                        	<label class="sr-only" for="form-number">Number</label>
+	                        	<input type="number" name="form-number" placeholder="Phone number..." class="form-number form-control" id="form-number">
+	                        </div>
+
+                            <div class="form-group">
+	                        	<label class="sr-only" for="form-password">Password</label>
+	                        	<input type="password" name="form-password" placeholder="Preffered password..." class="form-password form-control" id="form-password">
+	                        </div>
+
+                            <div class="form-group">
+	                        	<label class="sr-only" for="form-date">Date of Birth</label>
+	                        	<input type="date" name="form-date" placeholder="Date of birth..." class="form-date form-control" id="form-date">
+	                        </div>
+
+                            <div class="form-group">
+	                        	<label class="sr-only" for="form-homeAddress">Home Address</label>
+	                        	<input type="text" name="form-homeAddress" placeholder="home Address..." class="form-homeAddress form-control" id="form-homeAddress">
+	                        </div>
+
+                            <div class="form-group">
+	                        	<label class="sr-only" for="form-occupation">Occupation</label>
+	                        	<input type="text" name="form-occupation" placeholder="Occupation..." class="form-occupation form-control" id="form-occupation">
+	                        </div>
+
+                            <div class="form-group">
+	                        	<label class="sr-only" for="form-blood-group">Blood group</label>
+	                        	<select name="form-blood-group" id="form-blood-group">
+                                    <option value="" data-index="0">Blood Group</option>
+                                    <option value="O+" data-index="1">O+</option>
+                                    <option value="O-" data-index="2">O-</option>
+                                    <option value="A+" data-index="3">A+</option>
+                                    <option value="A-" data-index="4">A-</option>
+                                    <option value="B+" data-index="5">B+</option>
+                                    <option value="B-" data-index="6">B-</option>
+                                    <option value="AB+" data-index="7">AB+</option>
+                                    <option value="AB-" data-index="8">AB-</option>
+                                </select>
+	                        </div>
+
+                            <div class="form-group">
+                                <p>Have ever donated love before ?</p>
+	                        	<input type="radio" id="form-donated-yes" name="form-donated" value="Yes">
+                                <label for="form-donated-yes">YES</label><br>
+                                <input type="radio" id="form-donated-no" name="form-donated" value="No">
+                                <label for="form-donated-no">No</label><br>
+	                        </div>
+
+                            <div class="form-group">
+                                <p>Have you ever had positive Blood test for HbsAg,Hcv,HIV</p>
+	                        	<input type="radio" id="form-blood-test" name="form-donated" value="Yes">
+                                <label for="form-donated-yes">YES</label><br>
+                                <input type="radio" id="form-blood-test" name="form-donated" value="No">
+                                <label for="form-donated-no">No</label><br>
+	                        </div>
+
+                            <div class="form-group">
+                                <p>Have you ever any cardiac problems ?</p>
+	                        	<input type="radio" id="form-cardiac-test-yes" name="form-cardiac-test" value="Yes">
+                                <label for="form-donated-yes">YES</label><br>
+                                <input type="radio" id="form-cardiac-test-no" name="form-cardiac-test" value="No">
+                                <label for="form-donated-no">No</label><br>
+	                        </div>
+
+                            <div class="form-group">
+                                <p>Do you suffer any bleeding disorders?</p>
+	                        	<input type="radio" id="form-bleeding-disorder-yes" name="form-bleeding-disorder" value="Yes">
+                                <label for="form-donated-yes">YES</label><br>
+                                <input type="radio" id="form-bleeding-disorder-no" name="form-bleeding-disorder" value="No">
+                                <label for="form-donated-no">No</label><br>
+	                        </div>
+
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-about-yourself">About yourself</label>
+	                        	<textarea name="form-about-you rself" placeholder="About yourself..." 
+	                        	class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+	                        </div>
+                              
+                            <div class="form-group" >
+	                        	<label class="sr-only" for="form-about-yourself">About yourself</label>
+                                <div class="data-collect">
+                                    Consent & Signature <br> <br>
+                                    I want to donate blood voluntarily and will not be entitled to claim any exchange for my donation. I guarantee that all the provided information is true. I understand the questions,
+                                     which are for my protection as well as to protect the receipient of my blood. 
+                                    American Red Cross Requirements for males that want to donate blood:
+                                </div>
+	                        </div>
+                           
+
+                            <div class="form-group data-collect">
+                                    <ul>
+                                        <li>Be healthy and feeling well</li>
+                                        <li> Be at least 17 years old in most states</li>
+                                        <li>Be at least 5'1"</li>
+                                        <li>Weigh at least 130 lbs.</li>
+                                    </ul>
+	                        </div>
+
+                            <div class="form-group data-collect">
+                                <label class="sr-only" for="form-about-Requirements">Requirements</label>
+	                        	<input type="checkbox" name="Requirements" id="Requirements"> I  have read the requirements. I am eligible to donate blood.
+	                        </div>
+                            
+	                        <button type="submit" class="btn">Sign me up!</button>
+	                    </form>
+	                    
+        			</div>
+        			
+        		</div>
+        	</div>
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
