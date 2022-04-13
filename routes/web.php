@@ -14,8 +14,17 @@ use App\Http\Controllers\checkvalidation;
 |
 */
 
-
+/*Website and User Interface*/
 Route::view('/','pages.index');
 Route::view('/pages/appointment','pages.appointment');
 Route::view('/pages/registration','pages.registration');
 Route::POST('/pages/appointment',[checkvalidation::class,'formdata']);
+
+
+/*Admin Dashboard*/
+Route::view('Admin','Admin.Admin');
+Route::view('Admin/signin','Admin.signin');
+Route::view('Admin/data','Admin.data_details');
+Route::view('Admin/Advancedrecords','Admin.jquery-datatable');
+Route::view('Admin/Admin/Advancedrecords','Admin.jquery-datatable');
+Route::view('Admin/Registration','Admin.registration');
