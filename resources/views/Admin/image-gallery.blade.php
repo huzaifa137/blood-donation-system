@@ -1,6 +1,39 @@
-﻿@extends('layouts.template')
-@section('content')
-<section class="content">
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Image Gallery | Bootstrap Based Admin Template - Material Design</title>
+
+    <!-- Favicon-->
+    <link rel="icon" href="/Dashboard/MoreAssets/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="/Dashboard/MoreAssets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="/Dashboard/MoreAssets/plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="/Dashboard/MoreAssets/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Light Gallery Plugin Css -->
+    <link href="/Dashboard/MoreAssets/plugins/light-gallery/css/lightgallery.css" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href="/Dashboard/MoreAssets/css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="/Dashboard/MoreAssets/css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+    @include('includes.left-nav-bar')
+    <section class="content">
         <div class="container-fluid">
             <!-- Image Gallery -->
             <div class="block-header">
@@ -139,4 +172,31 @@
             </div>
         </div>
     </section>
-@endsDashboard
+
+    <!-- Jquery Core Js -->
+    <script src="/Dashboard/MoreAssets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="/Dashboard/MoreAssets/plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="/Dashboard/MoreAssets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="/Dashboard/MoreAssets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="/Dashboard/MoreAssets/plugins/node-waves/waves.js"></script>
+
+    <!-- Light Gallery Plugin Js -->
+    <script src="/Dashboard/MoreAssets/plugins/light-gallery/js/lightgallery-all.js"></script>
+
+    <!-- Custom Js -->
+    <script src="/Dashboard/MoreAssets/js/pages/medias/image-gallery.js"></script>
+    <script src="/Dashboard/MoreAssets/js/admin.js"></script>
+
+    <!-- Demo Js -->
+    <script src="/Dashboard/MoreAssets/js/demo.js"></script>
+</body>
+
+</html>
