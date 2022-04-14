@@ -16,17 +16,22 @@ use App\Http\Controllers\checkvalidation;
 
 /*Website and User Interface*/
 Route::view('/','pages.index');
-Route::view('/pages/appointment','pages.appointment');
-Route::view('/pages/registration','pages.registration');
-Route::POST('/pages/appointment',[checkvalidation::class,'formdata']);
-
+Route::group(['prefix' => 'pages'],function()
+{
+    Route::view('appointment','pages.appointment');
+    Route::view('registration','pages.registration');
+    Route::POST('pages/appointment',[checkvalidation::class,'formdata']);
+});
 
 /*Admin Dashboard*/
 Route::view('Admin','Admin.Admin');
-Route::view('Admin/signin','Admin.signin');
-Route::view('Admin/Morris','Admin.Morris');
-Route::view('Admin/flot','Admin.flot');
-Route::view('Admin/data','Admin.data_details');
-Route::view('Admin/image-gallery','Admin.image-gallery');
-Route::view('Admin/Advancedrecords','Admin.jquery-datatable');
-Route::view('Admin/Registration','Admin.registration');
+Route::group(['prefix' => 'Admin'], function()
+{
+    Route::view('signin','Admin.signin');
+    Route::view('Morris', 'Admin.Morris');
+    Route::view('flot','Admin.flot');
+    Route::view('data','Admin.data_details');
+    Route::view('image-gallery','Admin.image-gallery');
+    Route::view('Advancedrecords','Admin.jquery-datatable');
+    Route::view('Registration','Admin.registration');
+});

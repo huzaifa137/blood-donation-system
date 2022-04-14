@@ -120,7 +120,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="Dashboard/MoreAssets/pages/medias/image-gallery.html">Image Gallery</a>
+                                <a href={{url('Admin/image-gallery')}}>Image Gallery</a>
                             </li>
                         </ul>
                     </li>
