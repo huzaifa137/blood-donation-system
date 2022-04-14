@@ -24,7 +24,9 @@ Route::POST('/pages/appointment',[checkvalidation::class,'formdata']);
 /*Admin Dashboard*/
 Route::view('Admin','Admin.Admin');
 Route::view('Admin/signin','Admin.signin');
+Route::view('Admin/Morris','Admin.Morris');
+Route::view('Admin/flot','Admin.flot');
 Route::view('Admin/data','Admin.data_details');
+Route::view('Admin/image-gallery','Admin.image-gallery');
 Route::view('Admin/Advancedrecords','Admin.jquery-datatable');
-Route::view('Admin/Admin/Advancedrecords','Admin.jquery-datatable');
 Route::view('Admin/Registration','Admin.registration');

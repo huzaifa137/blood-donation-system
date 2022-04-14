@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Jquery DataTable | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/Dashboard/MoreAssets/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -24,8 +24,15 @@
     <!-- Custom Css -->
     <link href="/Dashboard/MoreAssets/css/style.css" rel="stylesheet">
 
+      <!-- Morris Plugin Js -->
+    <script src="/Dashboard/MoreAssets/plugins/raphael/raphael.min.js"></script>
+    <script src="/Dashboard/MoreAssets/plugins/morrisjs/morris.js"></script>
+
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="/Dashboard/MoreAssets/css/themes/all-themes.css" rel="stylesheet" />
+
+    <!-- Light Gallery Plugin Css -->
+    <link href="/Dashboard/MoreAssets/plugins/light-gallery/css/lightgallery.css" rel="stylesheet">
 </head>
 
 
@@ -106,7 +113,7 @@
                                 <a href="/Admin/data">Normal Tables</a>
                             </li>
                             <li>
-                                <a href="Admin/Advancedrecords">Jquery Datatables</a>
+                                <a href="{{ url('Admin/Advancedrecords')}}">Jquery Datatables</a>
                             </li>
                         </ul>
                     </li>
@@ -117,7 +124,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="/Dashboard/MoreAssets/pages/medias/image-gallery.html">Image Gallery</a>
+                                <a href="{{  url('Admin/image-gallery')}}">Image Gallery</a>
                             </li>
                         </ul>
                     </li>
@@ -128,10 +135,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="/Dashboard/MoreAssets/pages/charts/morris.html">Morris</a>
+                                <a href="/Admin/Morris">Morris</a>
                             </li>
                             <li>
-                                <a href="/Dashboard/MoreAssets/pages/charts/flot.html">Flot</a>
+                                <a href="/Admin/flot">Flot</a>
                             </li>
                         </ul>
                     </li>
@@ -193,7 +200,11 @@
 <!-- Sparkline Chart Plugin Js -->
 <script src="/Dashboard/MoreAssets/plugins/jquery-sparkline/jquery.sparkline.js"></script>
 
+<!-- Light Gallery Plugin Js -->
+<script src="/Dashboard/MoreAssets/plugins/light-gallery/js/lightgallery-all.js"></script>
+
 <!-- Custom Js -->
+<script src="/Dashboard/MoreAssets/js/pages/medias/image-gallery.js"></script>
 <script src="/Dashboard/MoreAssets/js/admin.js"></script>
 <script src="/Dashboard/MoreAssets/js/pages/index.js"></script>
 
